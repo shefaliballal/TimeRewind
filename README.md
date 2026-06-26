@@ -76,6 +76,6 @@ III. Future Improvements
 
 ## Author
 
-Shefali Ballal
-Final-year Information Science & Engineering Student
+Shefali Ballal,
+Final-year Information Science & Engineering Student,
 B.M.S. College of Engineering
