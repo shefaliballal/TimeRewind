@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand color (muted blue for dark mode) -->
+    <color name="colorPrimary">#90A4D4</color>
+    <color name="colorPrimaryVariant">#5C6BC0</color>
+    <color name="colorOnPrimary">#181A20</color>
+
+    <!-- Secondary/accent color (muted amber) -->
+    <color name="colorSecondary">#FFD54F</color>
+    <color name="colorSecondaryVariant">#FFB300</color>
+    <color name="colorOnSecondary">#181A20</color>
+
+    <!-- Backgrounds and surfaces (deep gray) -->
+    <color name="colorBackgroundDark">#181A20</color>
+    <color name="colorSurfaceDark">#23272F</color>
+    <color name="colorOnBackgroundDark">#E0E0E0</color>
+    <color name="colorOnSurfaceDark">#E0E0E0</color>
+    <color name="colorSurface">#23272F</color>
+    <color name="colorOnSurface">#E0E0E0</color>
+    <color name="colorOnBackground">#E0E0E0</color>
+    <color name="colorHighlight">#23272F</color>
+
+    <!-- Error color -->
+    <color name="colorError">#E57373</color>
+    <color name="colorOnError">#181A20</color>
+
+    <!-- Success and info -->
+    <color name="colorSuccess">#66BB6A</color>
+    <color name="colorInfo">#64B5F6</color>
+
+    <!-- Neutral and divider -->
+    <color name="colorDivider">#333A45</color>
+    <color name="colorNeutral">#B0BEC5</color>
+
+    <!-- Card shadow/highlight -->
+    <color name="colorCardShadow">#66000000</color>
+
+    <!-- Navigation bar background -->
+    <color name="colorNavBar">#23272F</color>
+    <color name="colorOutline">#333A45</color>
+</resources> 

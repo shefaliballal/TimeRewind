@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="?attr/colorSurface"
+    app:strokeColor="@color/colorPrimary"
+    app:strokeWidth="1dp"
+    android:layout_marginBottom="12dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView 
+            android:id="@+id/timeView" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" 
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+        
+        <TextView 
+            android:id="@+id/emotionView" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorInfo"
+            android:layout_marginTop="2dp"/>
+        
+        <TextView 
+            android:id="@+id/transcriptView" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorOnSurface"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

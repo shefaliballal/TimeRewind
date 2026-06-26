@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand color -->
+    <color name="colorPrimary">#4F8EF7</color> <!-- Blue -->
+    <color name="colorPrimaryVariant">#2563EB</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Secondary/accent color -->
+    <color name="colorSecondary">#FFB300</color> <!-- Amber -->
+    <color name="colorSecondaryVariant">#FF8F00</color>
+    <color name="colorOnSecondary">#222222</color>
+
+    <!-- Backgrounds and surfaces -->
+    <color name="colorBackground">#F5F6FA</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnBackground">#222222</color>
+    <color name="colorOnSurface">#222222</color>
+
+    <!-- Error color -->
+    <color name="colorError">#E74C3C</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <!-- Success and info -->
+    <color name="colorSuccess">#27AE60</color>
+    <color name="colorInfo">#4A90E2</color>
+
+    <!-- Neutral and divider -->
+    <color name="colorDivider">#E0E0E0</color>
+    <color name="colorNeutral">#888888</color>
+
+    <!-- Dark theme variants -->
+    <color name="colorPrimaryDark">#1A237E</color>
+    <color name="colorBackgroundDark">#181A20</color>
+    <color name="colorSurfaceDark">#23272F</color>
+    <color name="colorOnBackgroundDark">#F5F6FA</color>
+    <color name="colorOnSurfaceDark">#F5F6FA</color>
+
+    <!-- Miscellaneous -->
+    <color name="colorCardShadow">#22000000</color>
+    <color name="colorHighlight">#E3F2FD</color>
+
+    <!-- New color for BottomNavigationView background -->
+    <color name="colorNavBar">#F0F4FF</color>
+    
+    <!-- Navigation bar outline -->
+    <color name="colorOutline">#E0E0E0</color>
+</resources>

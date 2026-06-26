@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="?attr/colorBackground">
+
+    <!-- App Icon and Title -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_history_24"
+            android:tint="@color/colorPrimary"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Rewind"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/montserrat_regular" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy &amp; Consent"
+            android:textSize="18sp"
+            android:textColor="?attr/colorOnSurface"
+            android:alpha="0.7"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Privacy Policy Text -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔒 Privacy &amp; Data Collection Notice\n\nThis app records audio and processes emotions for memory assistance. Here's what you need to know:\n\n📱 What We Collect:\n• Audio recordings from your device microphone\n• Voice patterns and emotional analysis\n• Timestamps and location data (if enabled)\n\n🔐 How We Protect Your Data:\n• All data is stored locally on your device\n• Audio files are encrypted using AES-256 encryption\n• No data is shared with third parties without your explicit consent\n• You can delete your data at any time through app settings\n\n🎯 How We Use Your Data:\n• Create searchable memory transcripts\n• Analyze emotional patterns over time\n• Provide personalized memory insights\n• Improve the app's functionality\n\n⚖️ Your Rights:\n• Access, modify, or delete your data anytime\n• Opt-out of background recording\n• Control what data is collected\n• Export your data in standard formats\n\nBy tapping 'I Agree', you consent to this data collection and processing as described above."
+            android:textSize="16sp"
+            android:textColor="?attr/colorOnSurface"
+            android:lineSpacingExtra="4dp"
+            android:padding="16dp"
+            android:background="@drawable/outline_button_yellow"
+            android:layout_margin="8dp" />
+    </ScrollView>
+
+    <!-- Agree Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/agreeBtn"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="I Agree &amp; Continue"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorOnPrimary"
+        android:elevation="4dp" />
+
+</LinearLayout> 

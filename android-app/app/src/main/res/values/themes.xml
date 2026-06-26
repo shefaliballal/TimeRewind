@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TimeRewind" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <!-- Secondary color. -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <!-- Background and surface -->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <!-- Error -->
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnError">@color/colorOnError</item>
+        <!-- Custom additions -->
+        <item name="colorSuccess">@color/colorSuccess</item>
+        <item name="colorInfo">@color/colorInfo</item>
+        <item name="colorDivider">@color/colorDivider</item>
+        <item name="colorNeutral">@color/colorNeutral</item>
+        <!-- Card shadow/highlight -->
+        <item name="colorCardShadow">@color/colorCardShadow</item>
+        <item name="colorHighlight">@color/colorHighlight</item>
+        <!-- Use Material3 typography -->
+        <item name="android:textColorPrimary">@color/colorOnBackground</item>
+        <item name="android:textColorSecondary">@color/colorNeutral</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Dark theme -->
+    <style name="Theme.TimeRewind.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="android:colorBackground">@color/colorBackgroundDark</item>
+        <item name="colorBackground">@color/colorBackgroundDark</item>
+        <item name="colorSurface">@color/colorSurfaceDark</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundDark</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceDark</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnError">@color/colorOnError</item>
+        <item name="colorSuccess">@color/colorSuccess</item>
+        <item name="colorInfo">@color/colorInfo</item>
+        <item name="colorDivider">@color/colorDivider</item>
+        <item name="colorNeutral">@color/colorNeutral</item>
+        <item name="colorCardShadow">@color/colorCardShadow</item>
+        <item name="colorHighlight">@color/colorHighlight</item>
+        <item name="android:textColorPrimary">@color/colorOnBackgroundDark</item>
+        <item name="android:textColorSecondary">@color/colorNeutral</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

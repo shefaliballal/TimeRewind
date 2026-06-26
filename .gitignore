@@ -1,0 +1,30 @@
+# Android
+**/.gradle/
+**/.idea/
+**/.kotlin/
+**/build/
+**/captures/
+**/local.properties
+*.iml
+*.apk
+*.aab
+
+# Python
+**/__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables
+.env
+
+# Generated data
+**/uploads/
+**/memory_data/
+**/vector.index
+
+# OS files
+.DS_Store
+Thumbs.db

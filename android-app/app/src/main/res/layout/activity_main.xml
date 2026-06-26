@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="0dp"
+        android:layout_above="@id/bottomNav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- App Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_baseline_history_24"
+                        android:tint="@color/colorPrimary"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/appTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time Rewind"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:shadowColor="#B0BEC5"
+                        android:shadowDx="0"
+                        android:shadowDy="2"
+                        android:shadowRadius="4" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relive Your Memories"
+                    android:textSize="15sp"
+                        android:textColor="?attr/colorPrimary"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_marginTop="4dp"
+                    android:letterSpacing="0.04"
+                    android:alpha="0.85" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/settingsButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_baseline_settings_24"
+                    android:tint="@color/colorPrimary"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="12dp" />
+
+            </LinearLayout>
+
+            <!-- Record Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/recordButton"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="🎙 Start Recording"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorOnPrimary"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Background Recording Toggle -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleRecord"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Start Background Recording"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:backgroundTint="@android:color/transparent"
+                android:textColor="@color/colorPrimary"
+                android:strokeColor="@color/colorPrimary"
+                android:strokeWidth="2.0"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Recording Status -->
+            <TextView
+                android:id="@+id/recordingStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Recording"
+                android:textSize="16sp"
+                android:textColor="@color/colorError"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Transcript Area in Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="?attr/colorSurface">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:overScrollMode="always"
+                    android:scrollbars="vertical"
+                    android:background="?attr/colorHighlight"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/transcriptView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="200dp"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:gravity="start|top"
+                        android:padding="8dp"/>
+                </ScrollView>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+        android:layout_gravity="bottom"
+            android:background="@color/colorNavBar"
+            app:itemIconTint="@color/bottom_nav_icon_selector"
+            app:itemTextColor="@color/bottom_nav_selector"
+            app:itemIconSize="24dp"
+        app:itemBackground="@drawable/bottom_nav_item_background"
+            app:menu="@menu/bottom_nav_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

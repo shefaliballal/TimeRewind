@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_above="@id/bottomNav">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🤖 AI Memory Assistant"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Query Input Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="?attr/colorSurface"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ask me anything about your memories:"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/queryInput"
+                android:hint="e.g., When was I most happy? What stressed me out today?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:gravity="top|start"
+                android:padding="12dp"
+                android:background="?attr/colorSurface"
+                android:textSize="16sp"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColorHint="?attr/colorNeutral" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/askButton"
+                android:text="🤔 Ask Assistant"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:backgroundTint="@color/colorSecondary"
+                android:textColor="@color/colorOnSecondary"
+                android:elevation="2dp" />
+        </LinearLayout>
+
+        <!-- Response Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="?attr/colorSurface"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assistant Response:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginBottom="8dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorSurface"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/responseView"
+                    android:text="Ask me anything about your memories and I'll analyze them for you! 🧠"
+                    android:textSize="16sp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="0dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/colorOutline">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorNavBar"
+            app:itemIconTint="@color/bottom_nav_icon_selector"
+            app:itemTextColor="@color/bottom_nav_selector"
+            app:itemIconSize="24dp"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout> 

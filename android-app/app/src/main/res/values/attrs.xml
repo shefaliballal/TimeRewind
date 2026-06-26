@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorBackground" format="color" />
+    <attr name="colorSuccess" format="color" />
+    <attr name="colorInfo" format="color" />
+    <attr name="colorDivider" format="color" />
+    <attr name="colorNeutral" format="color" />
+    <attr name="colorCardShadow" format="color" />
+    <attr name="colorHighlight" format="color" />
+</resources> 
